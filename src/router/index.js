@@ -10,6 +10,7 @@ import News from '../views/News.vue'
 import News_Detail from '../views/News_Detail.vue'
 import Submit_A_Challenge from '../views/Submit_A_Challenge.vue'
 import Login from '../views/Login.vue'
+import SignUp from '../views/SignUp.vue'
 
 Vue.use(VueRouter)
 
@@ -71,6 +72,11 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: Login
+  },
+  {
+    path: '/signup',
+    name: 'SignUp',
+    component: SignUp
   }
 ]
 
