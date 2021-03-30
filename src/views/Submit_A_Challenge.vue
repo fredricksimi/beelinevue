@@ -1,7 +1,7 @@
 <template>
     <div>
         <Navbar/>
-        <main class="bg-soft pt-7">
+        <main class="bg-soft pt-7" style="background-color:#f4f6fc !important">
             <section class="section section-lg pt-4">
                 <div class="container">
                     <div class="row justify-content-center mb-3 mb-md-5">

@@ -10,7 +10,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section-lg">
+        <section class="section section-lg" style="background-color:#f4f6fc !important">
             <div class="container">
                 <div class="row">
                     <div class="card-deck">
