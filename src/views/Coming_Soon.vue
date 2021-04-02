@@ -28,15 +28,15 @@
                 <div class="col-md-4 form-inline">
                     <label class="form-control-label">Sort By&nbsp;&nbsp;</label>&nbsp;
                     <select class="select form-control-sm" name="" id="user-choice">
-                        <option value="RecentlyAdded">Recently Added</option>
-                        <option value="Alphabetically">Alphabetically A-Z</option>
-                        <option value="MoreTimeLeft">More Time Left</option>
-                        <option value="LessTimeLeft">Less Time Left</option>
+                        <option value="RecentlyAdded" class="nunitofont">Recently Added</option>
+                        <option value="Alphabetically" class="nunitofont">Alphabetically A-Z</option>
+                        <option value="MoreTimeLeft" class="nunitofont">More Time Left</option>
+                        <option value="LessTimeLeft" class="nunitofont">Less Time Left</option>
                     </select>
                 </div>
                 <div class="col-md-4">
                     <!-- <p><a href="/advanced-search" class="badge badge-pill badge-primary badge-lg">Use Advanced Search</a></p> -->
-                    <a href="/advanced-search"><button type="button" class="btn btn-primary">Use Advanced Search</button></a>
+                    <a href="/advanced-search"><button type="button" class="btn btn-primary nunitofont">Use Advanced Search</button></a>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@
                     <div class="col-xl-6">
                         <div class="card">
                             <div class="card-header border-0">
-                                <p class=" font-weight-bolder">AUDIENCES</p>
+                                <p class="nunitofont font-weight-bolder">AUDIENCES</p>
                             </div>
                             <div class="pr-4 pl-4 pb-5 mt--2">
                                 <ul class="list-inline">
@@ -61,7 +61,7 @@
                     <div class="col-xl-6">
                         <div class="card">
                             <div class="card-header border-0">
-                                <p class=" font-weight-bolder">TAGS</p>
+                                <p class="nunitofont font-weight-bolder">TAGS</p>
                             </div>
                             <div class="pr-4 pl-4 pb-5 mt--2">
                                 <ul class="list-inline">
@@ -86,7 +86,7 @@
                         <div class="card animate-up-3 mt-5" style="border-radius:15px;">
                             <div class="date" style="background-color:#EE5050; padding:2px 4px; border-radius:5px;position: absolute;top: 14px;left:16px;">
                                 
-                                <span class="day font-weight-bolder text-white">3&nbsp;months left</span>
+                                <span class="day nunitofont font-weight-bolder text-white">3&nbsp;months left</span>
                                 
                             </div>
                             <ul class="menu-content" style="position: absolute;top: 14px;right: 16px;">
@@ -96,15 +96,15 @@
                                 <img src="" class="card-img-top" style="height:200px;width:100%">
                             </a>
                             <div class="card-body bg-white" style="border-radius:0 0 15px 15px;box-shadow: 0 15px 12px rgba(0, 0, 0, 0.2)">
-                                <p><span class="author text-black font-weight-bolder">China Shanghai International …</span>
+                                <p><span class="author nunitofont text-black font-weight-bolder">China Shanghai International …</span>
                                     <span class="text-black font-weight-bolder pr-2" style="float:right!important">Status 
                                     <span class="badge badge-success badge">
                                     Open
                                     </span></span>
                                 </p>
-                                <h5 class="card-title"><a href="">The Golden Pinwheel Young Illustrators …</a></h5>
-                                <p class="card-text">The Golden Pinwheel Young Illustrators Competition is an international illustration contest held annually with the support of the Shanghai Press and …</p>
-                                <p class="text-black pt-3 font-weight-bolder"><i class="fas fa-trophy text-brown"></i>&nbsp;US$5,000</p>
+                                <h5 class="card-title nunitofont"><a href="">The Golden Pinwheel Young Illustrators …</a></h5>
+                                <p class="card-text nunitofont">The Golden Pinwheel Young Illustrators Competition is an international illustration contest held annually with the support of the Shanghai Press and …</p>
+                                <p class="text-black pt-3 font-weight-bolder nunitofont"><i class="fas fa-trophy text-brown"></i>&nbsp;US$5,000</p>
                             </div>
                         </div>
                     <!-- </div> -->
