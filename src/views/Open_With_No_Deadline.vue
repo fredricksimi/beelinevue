@@ -17,7 +17,7 @@
                         <div class="form-group mb-0">
                             <div class="input-group input-group-alternative input-group-merge">
                                 <div class="input-group-prepend" style="border-radius: 2rem;">
-                                <span class="input-group-text"><i class="fa fa-search" id="search-icon"></i></span>
+                                <span class="input-group-text"><img src="https://img.icons8.com/android/18/000000/search.png"/></span>
                                 </div>
                                 <input class="form-control" placeholder="Search by Sponsor's Name" type="text" id="user-input" style="width:250px;">
                                 <!-- <button class="btn btn-success my-2 my-sm-0 font-normal" type="submit">Search</button> -->

@@ -17,7 +17,7 @@
                         <div class="form-group mb-0">
                             <div class="input-group input-group-alternative input-group-merge">
                                 <div class="input-group-prepend" style="border-radius: 2rem;">
-                                <span class="input-group-text"><i class="fa fa-search" id="search-icon"></i></span>
+                                <span class="input-group-text"><img src="https://img.icons8.com/android/18/000000/search.png"/></span>
                                 </div>
                                 <input class="form-control" placeholder="Search by Sponsor's Name" type="text" id="user-input" style="width:250px;">
                                 <!-- <button class="btn btn-success my-2 my-sm-0 font-normal" type="submit">Search</button> -->
@@ -113,6 +113,9 @@
                 <br><br><br>
                 <nav aria-label="Page navigation example">
                     <ul class="pagination circle-pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" tabindex="-1" href="?page="><img src="https://img.icons8.com/android/18/000000/double-left.png"/></a>
+                        </li>
                         <li class="active page-item">
                             <a class="page-link" href="?page=1">1</a>
                         </li>
@@ -126,7 +129,7 @@
                         </li>
                     
                         <li class="page-item">
-                            <a class="page-link" href="?page=2"><i class="fas fa-angle-double-right"></i></a>
+                            <a class="page-link" href="?page="><img src="https://img.icons8.com/android/18/000000/double-right.png"/></a>
                         </li>
                     </ul>
                 </nav>
