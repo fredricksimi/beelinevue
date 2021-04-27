@@ -11,6 +11,7 @@ import News_Detail from '../views/News_Detail.vue'
 import Submit_A_Challenge from '../views/Submit_A_Challenge.vue'
 import Login from '../views/Login.vue'
 import SignUp from '../views/SignUp.vue'
+import Challenge_Detail from '../views/Challenge_Detail.vue'
 
 Vue.use(VueRouter)
 
@@ -52,6 +53,11 @@ const routes = [
     path: '/archived-challenges',
     name: 'Archived_Challenges',
     component: Archived_Challenges
+  },
+  {
+    path: '/challenge-detail/:id/:slug',
+    name: 'Challenge_Detail',
+    component: Challenge_Detail
   },
   {
     path: '/news',

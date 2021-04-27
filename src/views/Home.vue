@@ -76,31 +76,35 @@
             </div>
           </div>
         </div>
+        <div>
+        </div>
         <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 card-group">
+          <div v-for="chal in challenges" :key="chal.id" class="col-lg-4 col-md-6 col-sm-12 col-xs-12 card-group">
             <!-- <div class="col-sm-4"> -->
             <div class="card animate-up-3 mt-5" style="border-radius:15px;">
                 <div class="date" style="background-color:#EE5050; padding:2px 4px; border-radius:5px;position: absolute;top: 14px;left:16px;">
                     
-                    <span class="day font-weight-bolder text-white">3&nbsp;months left</span>
+                    <span class="day font-weight-bolder text-white nunitofont">3&nbsp;months left</span>
                     
                 </div>
                 <ul class="menu-content" style="position: absolute;top: 14px;right: 16px;">
                     
                 </ul>
-                <a href="">
-                    <img src="" class="card-img-top" style="height:200px;width:100%">
-                </a>
+                <router-link :to="{name:'Challenge_Detail', params:{id: chal.id, slug: chal.slug} }" class="icon">
+                  <img :src=chal.image class="card-img-top" style="height:200px;width:100%">
+                </router-link>
                 <div class="card-body bg-white" style="border-radius:0 0 15px 15px;box-shadow: 0 15px 12px rgba(0, 0, 0, 0.2)">
-                    <p><span class="author text-black font-weight-bolder">China Shanghai International …</span>
-                        <span class="text-black font-weight-bolder pr-2" style="float:right!important">Status 
-                        <span class="badge badge-success badge">
-                        Open
+                    <p><span class="author text-black font-weight-bolder nunitofont">{{chal.title}}</span>
+                        <span class="text-black font-weight-bolder pr-2 nunitofont" style="float:right!important">Status 
+                        <span class="badge badge-success badge nunitofont">
+                        {{chal.status}}
                         </span></span>
                     </p>
-                    <h5 class="card-title"><a href="">The Golden Pinwheel Young Illustrators …</a></h5>
-                    <p class="card-text">The Golden Pinwheel Young Illustrators Competition is an international illustration contest held annually with the support of the Shanghai Press and …</p>
-                    <p class="text-black pt-3 font-weight-bolder"><i class="fas fa-trophy text-brown"></i>&nbsp;US$5,000</p>
+                    <h5 class="card-title">
+                      <router-link :to="{name:'Challenge_Detail', params:{id: chal.id, slug: chal.slug} }" class="nunitofont">{{chal.title}}</router-link>
+                      </h5>
+                    <p class="card-text nunitofont" v-html="chal.description"></p>
+                    <p class="text-black pt-3 font-weight-bolder nunitofont"><i class="fas fa-trophy text-brown"></i>&nbsp;{{chal.prize}}</p>
                 </div>
             </div>
           <!-- </div> -->
@@ -109,7 +113,7 @@
         <div class="row">
           <div class="col-12 text-center pt-5">
             <!-- Button Modal -->
-            <a href="/challenges" class="btn btn-primary animate-up-2 nunitofont btn-lg">
+            <a href="/challenges" class="nunitofont btn btn-primary animate-up-2 nunitofont btn-lg">
             ALL CHALLENGES</a>
           </div>
         </div>
@@ -122,14 +126,27 @@
 <script>
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
+import { ALL_CHALLENGES_QUERY } from '../constants/graphql'
 import Navbar from '../components/Navbar.vue'
 import Footer from '../components/Footer.vue'
+
 export default {
   name: 'Home',
+  data () {
+    return {
+      challenges: [],
+      loading: 0,
+    }
+  },
   components: {
     // HelloWorld,
     Navbar,
     Footer
+  },
+  apollo: {
+    challenges: {
+      query: ALL_CHALLENGES_QUERY
+    }
   }
 }
 </script>
